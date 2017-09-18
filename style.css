@@ -1,7 +1,51 @@
 @font-face {
     font-family: Milkshake;
     src: url('Milkshake.otf');
-    }
+}
+
+header div, ul {
+    list-style: square url('images/shell.png');
+       display: block;
+}
+
+.box h2{
+    text-align:center;
+    top:80px;
+}
+
+.box {
+    width:70%;
+    height:250px;
+    background:#FFF;
+    margin:40px auto;
+}
+
+.effect {
+    position:relative;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+header h1 {
+    text-align: center;
+    padding-top: 60px;
+    font-family: Milkshake, Geneva, sans-serif;
+    text-shadow: 2px 2px 2px #2AD1F5;
+    font-size: 300%;
+    color: #099BBB;
+}
+
+header h2, h3 {
+    margin: 8px;
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #099BBB;
+}
+
+header,
+main,
+footer {
+	background-color: #F6DA97;
+}
+
 body {
     color: #000004;
     margin: 0 auto;
@@ -11,81 +55,34 @@ body {
     background-image: url('images/abstract_background_2.jpg');
     background-size: 100%;
     font-family: Tahoma, Geneva, sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
 }
-header div, ul {
-    list-style: square url('images/shell.png');
-    display: block;
-}
-.box h2{
-	text-align:center;
-	top:80px;
-}
-.box {
-	width:70%;
-	height:250px;
-	background:#FFF;
-	margin:40px auto;
-}
-.effect
-{
-    position:relative;
-    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-}
-.effect:before, .effect:after
-{
-	content:"";
-    position:absolute; 
-    z-index:-1;
-    box-shadow:0 0 20px rgba(0,0,0,0.8);
-    top:0;
-    bottom:0;
-    left:10px;
-    right:10px;
-    border-radius:100px / 10px;
-} 
-.effect:after
-{
-    right:10px; 
-    left:auto; 
-    transform:skew(8deg) rotate(3deg);
-}
+
 p {
     margin: 10px;
+    font-size: 90%;
 }
-figcaption {
-    font-style: italic;
-    font-size: 20;
-    text-align: center;
-}
-header h1 {
-    text-align: center;
-    padding-top: 60px;
-    font-family: Milkshake, Geneva, sans-serif;
-    text-shadow: 2px 2px 2px #2AD1F5;
-    font-size: 55;
-    color: #099BBB;
-}
-header h2, h3 {
-    margin: 8px;
-    font-family: Tahoma, Geneva, sans-serif;
-    color: #099BBB;
-}
-header,
-main,
-footer {
-	background-color: #ddd;
-}
+
 img {
 	width: 100%;
 	max-width: 100%;
 }
+
 img.special {
     width: 50%;
     max-width: 50%;
     padding-left: 230px;
 }
+
 #extra_special {
     width: 75%;
     max-width: 75%;
     padding-left: 120px;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 75%;
+    text-align: center;
 }
